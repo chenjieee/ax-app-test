@@ -20,4 +20,18 @@ public class CompositeSteps {
             @Named("description") String description) {
     }
 
+    @When("user query file by index $index in $appName with metadata $number and $description")
+    @Composite(steps = { 
+            "Given default login to ax-app", 
+            "When navigate to <appName>", 
+            "When query with basic metadata <number>,<description>",
+            "When view by index <index>", 
+            "Then force taking screenshot" })
+    public void compositeUploadFile(
+            @Named("appName") String appName, 
+            @Named("index") int index, 
+            @Named("number") String number, 
+            @Named("description") String description) {
+    }
+
 }
