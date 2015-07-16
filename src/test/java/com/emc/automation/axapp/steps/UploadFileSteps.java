@@ -7,14 +7,14 @@ import org.jbehave.core.annotations.When;
 
 import com.emc.automation.axapp.pages.FileEditorPage;
 import com.emc.automation.axapp.pages.ImageAppPage;
-import com.emc.automation.axapp.pages.UploadDocumentDialog;
+import com.emc.automation.axapp.pages.UploadFileDialog;
 
-public class ImageAppSteps {
+public class UploadFileSteps {
 
     @When("upload file $path")
     public void uploadFile(String path) {
         getPage(ImageAppPage.class).openUploadDocumentDialog();
-        getPage(UploadDocumentDialog.class).uploadFile(path);
+        getPage(UploadFileDialog.class).uploadFile(path);
     }
 
     @When("enter metadata $number,$description,$date,$type")

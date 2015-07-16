@@ -7,7 +7,7 @@ import com.emc.automation.web.components.Button;
 import com.emc.automation.web.components.TextField;
 import com.emc.automation.web.pages.AbstractPage;
 
-public class UploadDocumentDialog extends AbstractPage {
+public class UploadFileDialog extends AbstractPage {
 
     private TextField fileText = new TextField(cssSelector("[file-model='batchCreateRequest.files']"));
     private Button uploadButton = new Button(cssSelector("[ng-click='ok();']"));

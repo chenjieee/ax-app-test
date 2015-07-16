@@ -8,8 +8,13 @@ import com.emc.automation.web.pages.AbstractPage;
 
 public class ImageAppPage extends AbstractPage {
 
-    private Button batchButton = new Button(cssSelector(".wx-icon-C1_BatchDropdownMain"));
+    // drop down list: batch upload
+    private Button batchDropDownButton = new Button(cssSelector(".wx-icon-C1_BatchDropdownMain"));
     private Button uploadDocumentButton = new Button(cssSelector(".wx-icon-C2_UploadNewDoc"));
+
+    // drop down list: query search
+    private Button queryDropDownButton = new Button(cssSelector(".wx-icon-C5_CreateDropdownMain"));
+    private Button newQueryButton = new Button(cssSelector(".wx-icon-B2_NewQuery"));
 
     @Override
     public void waitForReady() {
@@ -17,8 +22,13 @@ public class ImageAppPage extends AbstractPage {
     }
 
     public void openUploadDocumentDialog() {
-        batchButton.click();
+        batchDropDownButton.click();
         uploadDocumentButton.click();
+    }
+
+    public void openNewQueryDialog() {
+        queryDropDownButton.click();
+        newQueryButton.click();
     }
 
 }
