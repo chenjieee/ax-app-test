@@ -1,0 +1,34 @@
+Scenario: upload file of type txt
+Given default login to ax-app
+When navigate to IMAGEAPP
+When upload file #data.repo#test.txt
+When enter metadata 1,Sample Text %RAND_NUM%,Jul-08-2015,ASCII TEXT
+Then file of type txt is displayed
+
+Scenario: upload file of type bmp
+Given default login to ax-app
+When navigate to IMAGEAPP
+When upload file #data.repo#test.bmp
+When enter metadata 2,Sample BMP Image %RAND_NUM%,Jul-08-2015,COLOR IMAGE
+Then file of type bmp is displayed
+
+Scenario: upload file of type png
+Given default login to ax-app
+When navigate to IMAGEAPP
+When upload file #data.repo#test.png
+When enter metadata 3,Sample PNG Image %RAND_NUM%,Jul-08-2015,COLOR IMAGE
+Then file of type png is displayed
+
+Scenario: upload file of type gif
+Given default login to ax-app
+When navigate to IMAGEAPP
+When upload file #data.repo#test.gif
+When enter metadata 4,Sample GIF Image %RAND_NUM%,Jul-08-2015,GIF
+Then file of type gif is displayed
+
+Scenario: upload file of type jpg
+Given default login to ax-app
+When navigate to IMAGEAPP
+When upload file #data.repo#test.jpg
+When enter metadata 5,Sample JPG Image %RAND_NUM%,Jul-08-2015,JPG
+Then file of type jpg is displayed
