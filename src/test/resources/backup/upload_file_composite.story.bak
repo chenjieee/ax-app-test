@@ -1,14 +1,2 @@
 Scenario: upload file
-When user upload file #data.repo#test.txt to IMAGEAPP with metadata 1 and Sample %RAND_NUM%
-
-Scenario: upload file
-When user upload file #data.repo#test.bmp to IMAGEAPP with metadata 1 and Sample %RAND_NUM%
-
-Scenario: upload file
-When user upload file #data.repo#test.png to IMAGEAPP with metadata 1 and Sample %RAND_NUM%
-
-Scenario: upload file
-When user upload file #data.repo#test.gif to IMAGEAPP with metadata 1 and Sample %RAND_NUM%
-
-Scenario: upload file
-When user upload file #data.repo#test.jpg to IMAGEAPP with metadata 1 and Sample %RAND_NUM%
+When user upload file %data.repo%\\bmp\\form2.bmp to AUTOMATION with metadata 6 and form2.bmp

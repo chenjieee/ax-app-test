@@ -17,14 +17,9 @@ public class UploadFileSteps {
         getPage(UploadFileDialog.class).uploadFile(path);
     }
 
-    @When("enter metadata $number,$description,$date,$type")
-    public void enterMetadata(String number, String description, String date, String type) {
-        getPage(FileEditorPage.class).enterMetadata(number, description, date, type);
-    }
-
-    @When("enter basic metadata $number,$description")
+    @When("enter metadata $number,$description")
     public void enterMetadata(String number, String description) {
-        getPage(FileEditorPage.class).enterBasicMetadata(number, description);
+        getPage(FileEditorPage.class).enterMetadata(number, description);
     }
 
     @Then("file of type $type is displayed")
