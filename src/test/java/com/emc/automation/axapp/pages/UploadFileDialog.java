@@ -1,6 +1,5 @@
 package com.emc.automation.axapp.pages;
 
-import static com.emc.automation.web.pages.Operations.waitFor;
 import static com.emc.automation.web.pages.Operations.waitForAngular;
 import static org.openqa.selenium.By.cssSelector;
 
@@ -20,7 +19,6 @@ public class UploadFileDialog extends AbstractPage {
 
     public void uploadFile(String path) {
         fileText.sendKeys(path);
-        waitFor(5);
         uploadButton.click();
     }
 

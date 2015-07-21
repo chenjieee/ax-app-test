@@ -9,7 +9,7 @@ import com.emc.automation.axapp.pages.QueryFilePage;
 
 public class QueryFileSteps {
 
-    @When("query with basic metadata $number,$description")
+    @When("query with metadata $number,$description")
     public void query(String number, String description) {
         getPage(ImageAppPage.class).openNewQueryDialog();
         getPage(QueryFilePage.class).query(number, description);

@@ -11,7 +11,7 @@ public class CompositeSteps {
             "Given default login to ax-app", 
             "When navigate to <appName>", 
             "When upload file <path>",
-            "When enter basic metadata <number>,<description>", 
+            "When enter metadata <number>,<description>", 
             "Then force taking screenshot" })
     public void compositeUploadFile(
             @Named("appName") String appName, 
@@ -24,7 +24,7 @@ public class CompositeSteps {
     @Composite(steps = { 
             "Given default login to ax-app", 
             "When navigate to <appName>", 
-            "When query with basic metadata <number>,<description>",
+            "When query with metadata <number>,<description>",
             "When view by index <index>", 
             "Then force taking screenshot" })
     public void compositeUploadFile(
