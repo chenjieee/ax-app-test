@@ -42,7 +42,7 @@ public class CommonSteps {
 
     @Then("force taking screenshot")
     public void takeScreenshot() {
-        waitFor(10);
+        waitFor(5);
         throw new RuntimeException("force taking screenshot");
     }
 
